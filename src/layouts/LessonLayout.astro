@@ -1,0 +1,255 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title: string;
+  module: number;
+  lesson: number;
+  description: string;
+  duration?: string;
+  prevLesson?: { title: string; href: string };
+  nextLesson?: { title: string; href: string };
+}
+
+const { title, module, lesson, description, duration, prevLesson, nextLesson } = Astro.props;
+---
+
+<BaseLayout title={title} description={description}>
+  <Header />
+  
+  <main class="lesson-container">
+    <div class="lesson-content">
+      <div class="lesson-header">
+        <div class="lesson-meta">
+          <span class="module-badge">Module {module}</span>
+          <span class="lesson-number">Lesson {lesson}</span>
+          {duration && <span class="duration">{duration}</span>}
+        </div>
+        <h1>{title}</h1>
+        <p class="lesson-description">{description}</p>
+      </div>
+
+      <article class="prose">
+        <slot />
+      </article>
+
+      <nav class="lesson-nav">
+        {prevLesson && (
+          <a href={prevLesson.href} class="nav-prev">
+            <span class="nav-label">← Previous</span>
+            <span class="nav-title">{prevLesson.title}</span>
+          </a>
+        )}
+        {nextLesson && (
+          <a href={nextLesson.href} class="nav-next">
+            <span class="nav-label">Next →</span>
+            <span class="nav-title">{nextLesson.title}</span>
+          </a>
+        )}
+      </nav>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .lesson-container {
+    padding: 120px 24px 60px;
+    min-height: 100vh;
+    background: var(--cream);
+  }
+
+  .lesson-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 60px;
+    border: 3px solid var(--charcoal);
+    box-shadow: 12px 12px 0 var(--mustard);
+  }
+
+  .lesson-header {
+    border-bottom: 3px solid var(--rust);
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+  }
+
+  .lesson-meta {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .module-badge {
+    background: var(--plum);
+    color: white;
+    padding: 4px 12px;
+    font-size: 0.85em;
+    font-weight: 600;
+  }
+
+  .lesson-number {
+    background: var(--rust);
+    color: white;
+    padding: 4px 12px;
+    font-size: 0.85em;
+    font-weight: 600;
+  }
+
+  .duration {
+    color: var(--charcoal);
+    font-size: 0.9em;
+    opacity: 0.7;
+  }
+
+  .lesson-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 16px;
+    color: var(--charcoal);
+  }
+
+  .lesson-description {
+    font-size: 1.15em;
+    color: var(--charcoal);
+    opacity: 0.8;
+    margin: 0;
+  }
+
+  /* Prose Styling */
+  .prose {
+    font-size: 1.1em;
+    line-height: 1.8;
+  }
+
+  .prose :global(h2) {
+    font-family: var(--font-display);
+    font-size: 1.8em;
+    color: var(--charcoal);
+    margin-top: 48px;
+    margin-bottom: 20px;
+    padding-top: 24px;
+    border-top: 2px solid var(--cream);
+  }
+
+  .prose :global(h3) {
+    font-family: var(--font-display);
+    font-size: 1.4em;
+    color: var(--charcoal);
+    margin-top: 36px;
+    margin-bottom: 16px;
+  }
+
+  .prose :global(p) {
+    margin-bottom: 20px;
+  }
+
+  .prose :global(ul), .prose :global(ol) {
+    margin-left: 24px;
+    margin-bottom: 24px;
+  }
+
+  .prose :global(li) {
+    margin-bottom: 12px;
+  }
+
+  .prose :global(code) {
+    background: var(--cream);
+    padding: 2px 8px;
+    font-family: 'Fira Code', monospace;
+    font-size: 0.9em;
+    border: 1px solid var(--charcoal);
+  }
+
+  .prose :global(pre) {
+    background: var(--charcoal);
+    color: var(--cream);
+    padding: 24px;
+    overflow-x: auto;
+    margin: 24px 0;
+    border: 3px solid var(--charcoal);
+  }
+
+  .prose :global(pre code) {
+    background: none;
+    border: none;
+    padding: 0;
+    color: inherit;
+  }
+
+  .prose :global(blockquote) {
+    background: rgba(184, 92, 60, 0.1);
+    border-left: 4px solid var(--rust);
+    padding: 20px 24px;
+    margin: 24px 0;
+    font-style: italic;
+  }
+
+  .prose :global(a) {
+    color: var(--rust);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+
+  .prose :global(a:hover) {
+    color: var(--mustard);
+  }
+
+  /* Lesson Navigation */
+  .lesson-nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 2px solid var(--cream);
+  }
+
+  .nav-prev, .nav-next {
+    padding: 20px;
+    border: 2px solid var(--charcoal);
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .nav-prev:hover, .nav-next:hover {
+    background: var(--cream);
+    transform: translateY(-4px);
+    box-shadow: 6px 6px 0 var(--mustard);
+  }
+
+  .nav-next {
+    text-align: right;
+  }
+
+  .nav-label {
+    display: block;
+    font-size: 0.85em;
+    color: var(--rust);
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .nav-title {
+    display: block;
+    color: var(--charcoal);
+    font-weight: 600;
+  }
+
+  @media (max-width: 768px) {
+    .lesson-content {
+      padding: 30px 20px;
+    }
+
+    .lesson-header h1 {
+      font-size: 1.8em;
+    }
+
+    .lesson-nav {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,46 @@
+---
+import { getCollection, render } from 'astro:content';
+import LessonLayout from '../../layouts/LessonLayout.astro';
+
+export async function getStaticPaths() {
+  const modules = await getCollection('modules');
+  
+  // Sort by order
+  const sorted = modules.sort((a, b) => a.data.order - b.data.order);
+  
+  return sorted.map((entry, index) => {
+    const prevEntry = index > 0 ? sorted[index - 1] : null;
+    const nextEntry = index < sorted.length - 1 ? sorted[index + 1] : null;
+    
+    return {
+      params: { slug: `${entry.data.module}/${entry.id.split('/').pop()?.replace('.mdx', '').split('-').slice(1).join('-')}` },
+      props: { 
+        entry,
+        prevLesson: prevEntry ? {
+          title: prevEntry.data.title,
+          href: `/modules/${prevEntry.data.module}/${prevEntry.id.split('/').pop()?.replace('.mdx', '').split('-').slice(1).join('-')}`
+        } : null,
+        nextLesson: nextEntry ? {
+          title: nextEntry.data.title,
+          href: `/modules/${nextEntry.data.module}/${nextEntry.id.split('/').pop()?.replace('.mdx', '').split('-').slice(1).join('-')}`
+        } : null,
+      },
+    };
+  });
+}
+
+const { entry, prevLesson, nextLesson } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<LessonLayout
+  title={entry.data.title}
+  module={entry.data.module}
+  lesson={entry.data.lesson}
+  description={entry.data.description}
+  duration={entry.data.duration}
+  prevLesson={prevLesson}
+  nextLesson={nextLesson}
+>
+  <Content />
+</LessonLayout>

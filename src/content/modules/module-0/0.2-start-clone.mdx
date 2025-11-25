@@ -1,0 +1,103 @@
+---
+title: "Start & Clone"
+module: 0
+lesson: 2
+description: "Launch Claude Code and clone the course materials to your local machine."
+duration: "10 minutes"
+order: 3
+objectives:
+  - Start Claude Code in your terminal
+  - Clone the MarketFlow project
+  - Explore the project structure
+---
+
+## Start Claude Code
+
+Now that Claude Code is installed, let's start it and get the course materials.
+
+## Step 1: Open Your Terminal
+
+- **Mac**: Press `Cmd + Space`, type "Terminal", press Enter
+- **Windows**: Press `Win + R`, type "cmd", press Enter
+- **Linux**: Press `Ctrl + Alt + T`
+
+## Step 2: Start Claude Code
+
+Navigate to where you want to store your projects:
+
+```bash
+cd ~/Projects  # or wherever you keep your work
+```
+
+Then start Claude Code:
+
+```bash
+claude
+```
+
+You'll see the Claude Code interface appear in your terminal.
+
+## Step 3: Clone MarketFlow
+
+MarketFlow is the sample marketing project we'll use throughout this course. Ask Claude to clone it:
+
+```
+Clone the MarketFlow starter project from cc4-marketing/marketflow-starter
+```
+
+Claude will:
+1. Clone the repository
+2. Set up the project structure
+3. Configure initial settings
+
+## Step 4: Explore the Structure
+
+Once cloned, you'll see this structure:
+
+```
+marketflow/
+├── .claude/               # Claude Code configuration
+│   └── agents/           # Custom AI agents
+├── campaigns/            # Your campaign briefs and plans
+├── content/              # Generated content
+│   ├── blogs/
+│   ├── emails/
+│   └── social/
+├── research/             # Competitive and market research
+├── templates/            # Reusable templates
+└── CLAUDE.md             # Project memory (brand guidelines)
+```
+
+### Key Directories
+
+| Directory | Purpose |
+|-----------|---------|
+| `.claude/` | Configuration and custom agents |
+| `campaigns/` | Campaign briefs, plans, calendars |
+| `content/` | All generated marketing content |
+| `research/` | Market research and analysis |
+| `templates/` | Reusable document templates |
+| `CLAUDE.md` | Your brand voice and guidelines |
+
+## Step 5: Open in Claude Code
+
+Make sure you're in the project directory:
+
+```bash
+cd marketflow
+claude
+```
+
+Claude Code will automatically read your `CLAUDE.md` file and understand your project context.
+
+## What's Next?
+
+You've completed Module 0! You now have:
+
+- ✅ Claude Code installed
+- ✅ MarketFlow project cloned
+- ✅ Project structure ready
+
+In **Module 1**, you'll learn the core concepts of Claude Code with real marketing examples. We'll start with an introduction to your MarketFlow project and how to work with marketing files.
+
+Ready? Let's dive into the core concepts! 🚀
