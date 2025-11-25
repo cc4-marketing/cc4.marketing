@@ -47,6 +47,12 @@ Type any of these commands to begin a lesson:
 - `/progress` - Check course progress
 - `/reset` - Reset exercise files to starting state
 
+### Secret Bonus Commands (Easter Eggs)
+- `/bonus-secret` - The 10x Marketer Framework (unlocked after completing course)
+- `/bonus-patterns` - Pattern library templates
+- `/bonus-audit` - Audit your compound loop
+- `/bonus-predict` - AI predictions for your next campaign
+
 ## Project Context
 
 ### Markit Agency
