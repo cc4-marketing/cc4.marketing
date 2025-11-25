@@ -1,0 +1,130 @@
+---
+interface Props {
+  number: number;
+  title: string;
+  description: string;
+  lessonCount: string;
+  lessons: string[];
+  href?: string;
+}
+
+const { number, title, description, lessonCount, lessons, href } = Astro.props;
+---
+
+<div class="module-card">
+  <div class="module-number">{number}</div>
+  <div class="module-title">{title}</div>
+  <p class="module-description">{description}</p>
+  <div class="lesson-count">{lessonCount}</div>
+  <div class="lessons-preview">
+    {lessons.map(lesson => (
+      <div class="lesson-item">{lesson}</div>
+    ))}
+  </div>
+  {href && (
+    <a href={href} class="module-link">Start Module →</a>
+  )}
+</div>
+
+<style>
+  .module-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(232, 185, 35, 0.5);
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    position: relative;
+    animation: fadeInScale 0.6s ease-out backwards;
+  }
+
+  .module-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, transparent 0%, rgba(232, 185, 35, 0.1) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+
+  .module-card:hover {
+    transform: scale(1.05);
+    border-color: var(--mustard);
+    background: rgba(255, 255, 255, 0.15);
+  }
+
+  .module-card:hover::before {
+    opacity: 1;
+  }
+
+  .module-number {
+    font-family: var(--font-display);
+    font-size: 3em;
+    color: var(--mustard);
+    margin-bottom: 12px;
+    display: inline-block;
+  }
+
+  .module-title {
+    font-family: var(--font-display);
+    font-size: 1.6em;
+    margin-bottom: 12px;
+    color: white;
+  }
+
+  .module-description {
+    font-size: 1em;
+    margin-bottom: 20px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.9);
+  }
+
+  .lesson-count {
+    font-size: 0.85em;
+    color: var(--mustard);
+    font-weight: 600;
+  }
+
+  .lessons-preview {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .lesson-item {
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.8);
+    padding-left: 16px;
+    position: relative;
+  }
+
+  .lesson-item::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--mustard);
+    font-weight: bold;
+  }
+
+  .module-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--mustard);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .module-link:hover {
+    color: white;
+  }
+
+  @keyframes fadeInScale {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+</style>

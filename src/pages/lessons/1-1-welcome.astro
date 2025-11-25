@@ -1,0 +1,68 @@
+---
+import LessonLayout from '../../layouts/LessonLayout.astro';
+
+const toc = [
+    { id: 'overview', title: 'Overview', level: 2 },
+    { id: 'how-course-works', title: 'How the Course Works', level: 2 },
+    { id: 'two-parts', title: 'Two Parts', level: 3 },
+    { id: 'course-structure', title: 'Course Structure', level: 3 },
+    { id: 'what-is-taskflow', title: 'What is TaskFlow?', level: 2 },
+    { id: 'user-personas', title: 'User Personas', level: 2 },
+    { id: 'time-commitment', title: 'Time Commitment', level: 2 },
+    { id: 'ready', title: "You're Ready", level: 2 },
+];
+---
+
+<LessonLayout
+    title="Welcome to TaskFlow"
+    module="Module 1: Fundamentals"
+    duration="20 min"
+    slug="1-1-welcome"
+    toc={toc}
+    prev={{ slug: '0-2-start-clone', title: 'Start & Clone' }}
+    next={{ slug: '1-2-visualizing-files', title: 'Visualizing Files' }}
+>
+    <div class="callout">
+        <p>Run <code>/start-1-1</code> in Claude Code to begin the interactive experience.</p>
+    </div>
+
+    <h2 id="overview">Overview</h2>
+    <p>This module introduces TaskFlow (your fictional company) and explains the course structure.</p>
+
+    <div class="callout callout-key">
+        <p><strong>Key takeaway:</strong> This is a hands-on course where you'll do real PM work using Claude Code.</p>
+    </div>
+
+    <h2 id="how-course-works">How the Course Works</h2>
+
+    <h3 id="two-parts">Two Parts</h3>
+    <p><strong>1. Interactive Modules</strong> — Complete modules using Claude Code. Each starts with a slash command like <code>/start-1-1</code>.</p>
+    <ul>
+        <li>Claude guides you step-by-step through exercises</li>
+        <li>You actually DO the work (not just read about it)</li>
+        <li>Real PM tasks for TaskFlow</li>
+    </ul>
+
+    <p><strong>2. Reference Guides</strong> — Written documentation for each module.</p>
+
+    <h3 id="course-structure">Course Structure</h3>
+    <pre><code>Module 0: Getting Started
+Module 1: Fundamentals
+Module 2: Advanced PM Work</code></pre>
+
+    <h2 id="what-is-taskflow">What is TaskFlow?</h2>
+    <p>TaskFlow is a fictional B2B SaaS company providing project management software for enterprise teams. You'll work as a marketing professional creating real campaigns.</p>
+
+    <h2 id="user-personas">User Personas</h2>
+    <ul>
+        <li><strong>Enterprise Emma:</strong> VP of Operations at Fortune 500</li>
+        <li><strong>Manager Mike:</strong> Project Manager at mid-market company</li>
+        <li><strong>Startup Sara:</strong> Head of Product at fast-growing startup</li>
+    </ul>
+
+    <h2 id="time-commitment">Time Commitment</h2>
+    <p>Each module takes approximately 30-60 minutes. Work at your own pace.</p>
+
+    <h2 id="ready">You're Ready</h2>
+    <p>Open Claude Code and run <code>/start-1-1</code> to begin.</p>
+</LessonLayout>

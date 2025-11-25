@@ -1,0 +1,84 @@
+# robots.txt for cc4.marketing
+# Allow all search engines and AI bots to crawl
+
+# Default: Allow all bots
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_astro/
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+User-agent: MSNBot
+Allow: /
+
+# Other major search engines
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# AI Bots - Allow for training and indexing
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Anthropic-AI
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Social media crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Pinterest
+Allow: /
+
+# Sitemap location
+Sitemap: https://cc4.marketing/sitemap-index.xml
+
+# Crawl-delay (be nice to servers, but we want fast indexing)
+# Most bots ignore this, but it's good practice
+User-agent: *
+Crawl-delay: 1
+
+# Host directive (helps with canonical domain)
+Host: https://cc4.marketing
