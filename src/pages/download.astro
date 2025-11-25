@@ -4,7 +4,7 @@ import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
 const GOOGLE_FORM_ACTION = "https://docs.google.com/forms/d/e/1FAIpQLSct4n1_PbVZsrBoactOIpYwNGzvM2Es0-4jx7mLYxmRdRlCcg/formResponse";
-const EMAIL_FIELD_NAME = "entry.1764001032";
+const EMAIL_FIELD_NAME = "entry.778960156";
 ---
 
 <BaseLayout title="Download Course | Claude Code for Marketers" description="Get the interactive course materials">
@@ -47,7 +47,7 @@ const EMAIL_FIELD_NAME = "entry.1764001032";
         </p>
         
         <a 
-          href="https://github.com/cc4-marketing/cc4.marketing/releases/latest/download/cc4.marketing.zip" 
+          href="https://github.com/cc4-marketing/cc4.marketing/archive/refs/tags/v1.0.0.zip" 
           class="download-btn"
           id="download-link"
         >
@@ -79,33 +79,47 @@ const EMAIL_FIELD_NAME = "entry.1764001032";
   const emailFormCard = document.getElementById('email-form-card');
   const thankYouCard = document.getElementById('thank-you-card');
 
-  form.addEventListener('submit', async (e) => {
+  form.addEventListener('submit', function(e) {
     e.preventDefault();
     
     const email = emailInput.value;
     
-    // Submit to Google Form (hidden iframe to avoid redirect)
-    try {
-      const formData = new FormData();
-      formData.append(EMAIL_FIELD_NAME, email);
-      
-      // Send to Google Form via no-cors fetch
-      fetch(GOOGLE_FORM_ACTION, {
-        method: 'POST',
-        mode: 'no-cors',
-        body: formData
-      });
-    } catch (error) {
-      console.log('Form submission attempted');
-    }
+    // Create hidden iframe for form submission
+    const iframe = document.createElement('iframe');
+    iframe.name = 'hidden_iframe';
+    iframe.style.display = 'none';
+    document.body.appendChild(iframe);
+    
+    // Create a form element to submit to Google
+    const googleForm = document.createElement('form');
+    googleForm.method = 'POST';
+    googleForm.action = GOOGLE_FORM_ACTION;
+    googleForm.target = 'hidden_iframe';
+    
+    // Add email as hidden input
+    const input = document.createElement('input');
+    input.type = 'hidden';
+    input.name = EMAIL_FIELD_NAME;
+    input.value = email;
+    googleForm.appendChild(input);
+    
+    // Submit the form
+    document.body.appendChild(googleForm);
+    googleForm.submit();
     
     // Show thank you card
     emailFormCard.classList.add('hidden');
     thankYouCard.classList.remove('hidden');
     
-    // Store in localStorage to remember they've signed up
+    // Store in localStorage
     localStorage.setItem('cc4m_email', email);
     localStorage.setItem('cc4m_downloaded', 'true');
+    
+    // Cleanup after submission
+    setTimeout(() => {
+      document.body.removeChild(googleForm);
+      document.body.removeChild(iframe);
+    }, 1000);
   });
 
   // Check if already downloaded
