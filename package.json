@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.12",
+    "@astrojs/sitemap": "^3.6.0",
     "astro": "^5.16.0"
   }
 }
