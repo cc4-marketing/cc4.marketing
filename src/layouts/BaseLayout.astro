@@ -2,9 +2,86 @@
 interface Props {
   title: string;
   description?: string;
+  image?: string;
+  type?: 'website' | 'article';
+  publishedDate?: string;
+  modifiedDate?: string;
+  author?: string;
+  keywords?: string[];
+  canonical?: string;
+  noindex?: boolean;
 }
 
-const { title, description = "Master AI-powered marketing with Claude Code" } = Astro.props;
+const { 
+  title, 
+  description = "Master AI-powered marketing with Claude Code. Learn to work 10x faster with interactive lessons taught inside Claude Code itself.",
+  image = "/og-image.png",
+  type = "website",
+  publishedDate,
+  modifiedDate,
+  author = "CC4.Marketing",
+  keywords = ["Claude Code", "marketing", "AI marketing", "content marketing", "marketing automation", "Claude AI", "marketing course"],
+  canonical,
+  noindex = false
+} = Astro.props;
+
+const siteUrl = "https://cc4.marketing";
+const currentPath = Astro.url.pathname;
+const canonicalUrl = canonical || `${siteUrl}${currentPath}`;
+const fullTitle = title.includes("CC4") ? title : `${title} | Claude Code for Marketers`;
+const ogImage = image.startsWith("http") ? image : `${siteUrl}${image}`;
+
+// JSON-LD Structured Data
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Claude Code for Marketers",
+  "alternateName": "CC4.Marketing",
+  "url": siteUrl,
+  "description": "Interactive course teaching AI-powered marketing workflows with Claude Code",
+  "publisher": {
+    "@type": "Organization",
+    "name": "CC4.Marketing",
+    "url": siteUrl
+  }
+};
+
+const courseSchema = {
+  "@context": "https://schema.org",
+  "@type": "Course",
+  "name": "Claude Code for Marketers",
+  "description": "Master AI-powered marketing workflows. Learn to work 10x faster with interactive lessons.",
+  "provider": {
+    "@type": "Organization",
+    "name": "CC4.Marketing",
+    "url": siteUrl
+  },
+  "educationalLevel": "Beginner to Intermediate",
+  "teaches": ["AI Marketing", "Content Creation", "Marketing Automation", "Claude Code"],
+  "numberOfCredits": "16 lessons",
+  "timeRequired": "PT10H",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "courseMode": "online",
+  "hasCourseInstance": {
+    "@type": "CourseInstance",
+    "courseMode": "online",
+    "courseWorkload": "PT10H"
+  }
+};
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": siteUrl
+    }
+  ]
+};
 ---
 
 <!DOCTYPE html>
@@ -12,17 +89,67 @@ const { title, description = "Master AI-powered marketing with Claude Code" } = 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{title} | CC4.Marketing</title>
-  <meta name="description" content={description}>
   
-  <!-- Open Graph -->
-  <meta property="og:title" content={title}>
+  <!-- Primary Meta Tags -->
+  <title>{fullTitle}</title>
+  <meta name="title" content={fullTitle}>
+  <meta name="description" content={description}>
+  <meta name="keywords" content={keywords.join(", ")}>
+  <meta name="author" content={author}>
+  <meta name="robots" content={noindex ? "noindex, nofollow" : "index, follow"}>
+  <meta name="googlebot" content={noindex ? "noindex, nofollow" : "index, follow"}>
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href={canonicalUrl}>
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content={type}>
+  <meta property="og:url" content={canonicalUrl}>
+  <meta property="og:title" content={fullTitle}>
   <meta property="og:description" content={description}>
-  <meta property="og:url" content="https://cc4.marketing">
-  <meta property="og:type" content="website">
+  <meta property="og:image" content={ogImage}>
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Claude Code for Marketers">
+  <meta property="og:locale" content="en_US">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content={canonicalUrl}>
+  <meta name="twitter:title" content={fullTitle}>
+  <meta name="twitter:description" content={description}>
+  <meta name="twitter:image" content={ogImage}>
+  <meta name="twitter:creator" content="@cc4marketing">
+  
+  <!-- Article specific (for blog/lessons) -->
+  {type === "article" && publishedDate && (
+    <meta property="article:published_time" content={publishedDate}>
+  )}
+  {type === "article" && modifiedDate && (
+    <meta property="article:modified_time" content={modifiedDate}>
+  )}
+  {type === "article" && (
+    <meta property="article:author" content={author}>
+  )}
   
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  
+  <!-- Preconnect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#B85C3C">
+  <meta name="msapplication-TileColor" content="#B85C3C">
+  
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(courseSchema)} />
+  <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />
 </head>
 <body>
   <slot />
