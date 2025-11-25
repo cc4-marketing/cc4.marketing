@@ -20,23 +20,23 @@ const modules = [
   {
     number: 0,
     title: 'Getting Started',
-    description: 'Set up Claude Code and establish your foundation for success.',
+    description: 'Install Claude Code and get your first taste of AI-powered marketing.',
     lessonCount: '3 Lessons • 30 minutes',
-    lessons: ['Introduction', 'Installation', 'Start & Clone'],
+    lessons: ['Introduction', 'Installation', 'First Task'],
     href: '/modules/0/introduction'
   },
   {
     number: 1,
     title: 'Core Concepts',
-    description: 'Master AI agents, automation, and real marketing workflows.',
+    description: 'Master AI agents, sub-agents, and real marketing workflows with Markit agency.',
     lessonCount: '7 Lessons • 3-4 hours',
-    lessons: ['Welcome to MarketFlow', 'Working with Files', 'First Tasks', '+ 4 more lessons'],
+    lessons: ['Welcome to Markit', 'Working with Files', 'First Tasks', '+ 4 more lessons'],
     href: '/modules/1/welcome'
   },
   {
     number: 2,
     title: 'Advanced Apps',
-    description: 'Execute real campaigns end-to-end. Strategy to analytics.',
+    description: 'Execute real campaigns for Planerio. Strategy to analytics.',
     lessonCount: '6 Lessons • 4-5 hours',
     lessons: ['Campaign Briefs', 'Content Strategy', 'Marketing Copy', '+ 3 more lessons'],
     href: '/modules/2/campaign-brief'
@@ -56,11 +56,53 @@ const stats = [
   
   <Hero
     title="Claude Code for Marketers"
-    subtitle="Work 10x Faster. Ship More Campaigns."
-    description="Master AI-powered marketing workflows that actually save you time. Join hundreds of marketers who've unlocked the next level of productivity."
-    primaryCta={{ label: 'Start Course →', href: '/modules/0/introduction' }}
-    secondaryCta={{ label: 'Learn More', href: '#features' }}
+    subtitle="Learn IN Claude Code. Work 10x Faster."
+    description="This course is taught entirely inside Claude Code. You'll install it, clone the repo, then type /start-0-0 to begin. Claude guides you through each lesson interactively."
+    primaryCta={{ label: 'Download Course →', href: 'https://github.com/cc4-marketing/cc4.marketing/releases/latest' }}
+    secondaryCta={{ label: 'Browse Docs', href: '#modules' }}
   />
+
+  <!-- How It Works Section -->
+  <section class="how-it-works-section" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label">Interactive Learning</div>
+        <h2 class="section-title">Learn IN Claude Code!</h2>
+        <p class="section-description">This course is taught entirely inside Claude Code itself.</p>
+      </div>
+
+      <div class="how-it-works-grid">
+        <div class="how-step">
+          <div class="step-number">1</div>
+          <h3>Download & Install</h3>
+          <p>Get Claude Code installed and clone the course repository to your computer.</p>
+        </div>
+        <div class="how-step">
+          <div class="step-number">2</div>
+          <h3>Type /start-0-0</h3>
+          <p>Open Claude Code in the course folder and type <code>/start-0-0</code> to begin.</p>
+        </div>
+        <div class="how-step">
+          <div class="step-number">3</div>
+          <h3>Learn by Doing</h3>
+          <p>Claude guides you through each lesson. You create real marketing files as you learn.</p>
+        </div>
+      </div>
+
+      <div class="practice-project">
+        <h3>Your Practice Project: Markit Agency</h3>
+        <p>You'll play the role of Marketing Strategist at <strong>Markit</strong>, working on campaigns for your client <strong>Planerio</strong> (a B2B team productivity SaaS).</p>
+        <div class="project-features">
+          <span>Campaign Briefs</span>
+          <span>Content Strategy</span>
+          <span>Multi-Channel Copy</span>
+          <span>Competitive Analysis</span>
+          <span>SEO Optimization</span>
+          <span>Custom AI Reviewers</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Features Section -->
   <section class="features-section" id="features">
@@ -143,6 +185,97 @@ const stats = [
 </BaseLayout>
 
 <style>
+  /* How It Works Section */
+  .how-it-works-section {
+    background: var(--cream);
+    border-bottom: 4px solid var(--olive);
+  }
+
+  .how-it-works-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 50px;
+  }
+
+  .how-step {
+    text-align: center;
+    padding: 30px;
+    background: white;
+    border: 3px solid var(--charcoal);
+    box-shadow: 8px 8px 0 var(--charcoal);
+  }
+
+  .step-number {
+    width: 60px;
+    height: 60px;
+    background: var(--mustard);
+    color: var(--charcoal);
+    font-family: var(--font-display);
+    font-size: 1.8em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    border: 3px solid var(--charcoal);
+  }
+
+  .how-step h3 {
+    font-family: var(--font-display);
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: var(--charcoal);
+  }
+
+  .how-step p {
+    color: var(--charcoal);
+    line-height: 1.6;
+  }
+
+  .how-step code {
+    background: var(--olive);
+    color: white;
+    padding: 2px 8px;
+    font-family: monospace;
+    font-size: 0.95em;
+  }
+
+  .practice-project {
+    margin-top: 60px;
+    padding: 40px;
+    background: var(--olive);
+    color: white;
+    text-align: center;
+    border: 3px solid var(--charcoal);
+    box-shadow: 10px 10px 0 var(--charcoal);
+  }
+
+  .practice-project h3 {
+    font-family: var(--font-display);
+    font-size: 1.6em;
+    margin-bottom: 15px;
+  }
+
+  .practice-project p {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    line-height: 1.7;
+  }
+
+  .project-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .project-features span {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 8px 16px;
+    font-size: 0.9em;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
   /* Features Section */
   .features-section {
     background: white;
@@ -279,6 +412,10 @@ const stats = [
   }
 
   @media (max-width: 768px) {
+    .how-it-works-grid {
+      grid-template-columns: 1fr;
+    }
+
     .features-grid,
     .modules-grid,
     .stats-grid {
@@ -288,6 +425,11 @@ const stats = [
 
     .cta-section h2 {
       font-size: 2em;
+    }
+
+    .project-features {
+      flex-direction: column;
+      align-items: center;
     }
   }
 </style>
