@@ -100,7 +100,6 @@ cc4.marketing/
 ├── plugins/
 │   ├── cm/                   # Compounding Marketing plugin
 │   └── cf/                   # Content Factory plugin
-└── src/                      # Website source (Astro)
 ```
 
 ## Brand Voice (for Planerio content)
