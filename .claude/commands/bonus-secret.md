@@ -47,12 +47,12 @@ Add a "Learnings" section to your CLAUDE.md:
 
 ## Campaign Learnings
 
-### Q1 Launch (January 2025)
+### Q1 Launch (January 2026)
 - Subject lines with numbers performed 2x better
 - LinkedIn posts under 150 words got 3x engagement
 - Manager Mark responds best to ROI-focused messaging
 
-### Q2 Growth (April 2025)
+### Q2 Growth (April 2026)
 - Video content outperformed static 4:1
 - [Add your learnings...]
 

@@ -2,7 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-**Learn AI-powered marketing workflows with interactive lessons taught inside Claude Code itself.**
+**Master advanced AI-powered marketing workflows with interactive, hands-on lessons taught entirely within Claude Code.**
 
 ## 🚀 Start Here
 
@@ -11,7 +11,7 @@ Welcome to the "Claude Code for Marketers" interactive course. This is **not** a
 ### Quick Start Guide
 
 **1. Prerequisites**
-You must have **Claude Code** installed. If you don't, request access at [claude.ai/code](https://claude.ai/code).
+You must have **Claude Code** installed. Download it at [claude.ai/code](https://claude.ai/code).
 
 **2. Download the Course**
 Open your terminal and run:
@@ -44,7 +44,7 @@ Then, type this exact command to begin:
 
 ## 📖 How to use this course
 
-This course is built differently. Instead of watching a video and trying to remember it later, you work alongside an AI instructor.
+This course uses an interactive, AI-native learning approach. Instead of passive video consumption, you work directly with AI to build real marketing assets.
 
 1.  **Interactive Lessons**: You type slash commands (like `/start-1-1`), and Claude Code will give you instructions, explain concepts, and check your work.
 2.  **Real Files**: You will create actual marketing assets (briefs, emails, strategy docs) in the `exercises/` folder.

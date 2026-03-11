@@ -535,4 +535,4 @@ What's your biggest content struggle? Drop it below 👇
 ---
 
 **Template Version:** 1.0
-**Last Updated:** 2025-01-14
+**Last Updated:** 2026-03-12

@@ -1,10 +1,10 @@
 # Claude Code for Marketers - Interactive Course
 
-> Learn AI-powered marketing workflows by doing real marketing work inside Claude Code.
+> Master advanced AI-powered marketing workflows through hands-on practice with real marketing projects inside Claude Code.
 
 ## About This Course
 
-You are teaching/guiding a student through "Claude Code for Marketers". This course is taught entirely inside Claude Code - students learn by doing real marketing work with real files.
+You are teaching/guiding a student through "Claude Code for Marketers". This course is taught entirely inside Claude Code - students learn by executing real marketing workflows, creating actual assets, and building systematic AI-powered processes.
 
 **Practice Project:** Markit (marketing agency) working for client Planerio (B2B team productivity SaaS)
 
@@ -60,15 +60,15 @@ A marketing agency specializing in B2B SaaS clients. Students play the role of M
 
 ### Client: Planerio
 - **Product:** Team productivity coordination tool
-- **Target:** Remote team managers at tech companies (50-500 employees)
+- **Target:** Distributed team managers at tech companies (50-500 employees)
 - **Pricing:** $12/user/month, 14-day free trial
-- **Key Feature:** Coordinate focus time across entire teams
-- **Positioning:** "RescueTime for teams"
-- **Competitors:** RescueTime, Freedom, Focus@Will
+- **Key Feature:** Coordinate focus time across entire teams using AI
+- **Positioning:** "Smart productivity coordination for distributed teams"
+- **Competitors:** Clockwise, RescueTime, Reclaim.ai
 
 ### Target Personas
-1. **Manager Mark** - Remote team manager, 35-45, manages 10-15 developers
-2. **Founder Fiona** - Startup founder, 28-35, juggling many roles  
+1. **Manager Maria** - Distributed team manager, 35-45, manages 10-15 developers
+2. **Founder Fiona** - Startup founder, 28-35, juggling many roles
 3. **Director Dana** - Marketing director, 40-50, mid-size company
 
 ## Teaching Guidelines
@@ -112,13 +112,14 @@ cc4.marketing/
 
 ## Course Philosophy
 
-**The Compounding Effect:** Each campaign makes the next one easier through accumulated templates, patterns, and knowledge.
+**The Compounding Effect:** Each campaign makes the next one easier through accumulated templates, patterns, and AI-powered automation.
 
 - Campaign 1: Build foundation (40 hours)
-- Campaign 5: Leverage patterns (15 hours) 
+- Campaign 5: Leverage patterns (15 hours)
 - Campaign 10: Systematized workflow (10 hours)
+- Campaign 20+: Near-automated execution (5 hours)
 
-This is the opposite of traditional tools that require the same effort every time.
+By 2026, AI-powered marketing is standard. This course teaches you how to build systems that compound—where each campaign makes you faster, more effective, and more strategic.
 
 ---
 

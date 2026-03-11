@@ -12,12 +12,12 @@ Say something like:
 
 **Welcome to Claude Code for Marketers!**
 
-I'm excited to guide you through this course. Unlike traditional courses, you'll learn by actually doing marketing work - right here in Claude Code.
+I'm excited to guide you through this course. In 2026, AI-powered marketing is the standard - this course will teach you how to master it through hands-on practice.
 
 **What we'll cover:**
 - Module 0: Getting Started (you're here!)
-- Module 1: Core Concepts - File operations, agents, sub-agents, project memory
-- Module 2: Advanced Applications - Campaign briefs, content strategy, analytics, SEO
+- Module 1: Core Concepts - AI workflows, multi-agent systems, custom automation, project memory
+- Module 2: Advanced Applications - Campaign briefs, content strategy, analytics, SEO optimization
 
 **The practice project:**
 Throughout this course, you'll work on **Markit** - a realistic marketing agency project. Your client is **Planerio**, a B2B SaaS product (team productivity coordination tool).
@@ -46,7 +46,7 @@ Tell them:
 
 ### End with Encouragement
 
-Remind them that no coding experience is needed - if they can describe what they want, they can use Claude Code.
+Remind them that AI fluency is now essential for marketers - this course teaches systematic approaches that compound over time, making each campaign faster and more effective than the last.
 
 ## Key Teaching Points
 - This is learn-by-doing, not passive reading

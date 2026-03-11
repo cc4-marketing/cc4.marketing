@@ -23,7 +23,7 @@ When the user invokes `/cf:schedule`, you will:
 
 **Optional (but at least one recommended):**
 - `--period` - Time period to schedule (default: next 30 days)
-  - Examples: "January 2025", "Q1", "Next 8 weeks", "March through May"
+  - Examples: "June 2026", "Q3", "Next 8 weeks", "July through September"
 - `--frequency` - Publishing frequency per content type
   - Example: "3 blogs/week, 5 social/day, 2 emails/week"
 - `--themes` - Content themes to cycle through
@@ -51,7 +51,7 @@ When the user invokes `/cf:schedule`, you will:
 To create your content calendar, I need:
 
 1. Time period: What dates should this calendar cover?
-   (e.g., "March 2025", "Q2", "Next 8 weeks")
+   (e.g., "June 2026", "Q3", "Next 8 weeks")
 
 2. Content frequency: How often do you want to publish?
    (e.g., "2 blogs/week, 3 social posts/day")
@@ -538,7 +538,7 @@ Would you like me to:
 **Input:**
 ```bash
 /cf:schedule \
-  --period "March 2025" \
+  --period "June 2026" \
   --frequency "5 social/day" \
   --platforms "linkedin,twitter,instagram" \
   --themes "Product tips, Customer stories, Industry insights"
@@ -559,7 +559,7 @@ Would you like me to:
 **Input:**
 ```bash
 /cf:schedule \
-  --period "Q1 2025" \
+  --period "Q3 2026" \
   --frequency "3 blogs/week" \
   --themes "SEO guides, Product updates, Case studies" \
   --generate-content partial

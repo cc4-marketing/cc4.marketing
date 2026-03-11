@@ -20,7 +20,7 @@ Transform a campaign idea into a detailed, actionable brief by:
 ### Parameters
 
 - **campaign-name** (required): Clear, descriptive campaign name
-  - Examples: "Q2 Product Launch", "Holiday Promotion 2025", "Rebranding Campaign"
+  - Examples: "Q2 Product Launch", "Holiday Promotion 2026", "Rebranding Campaign"
 
 ### Options
 
@@ -29,7 +29,7 @@ Transform a campaign idea into a detailed, actionable brief by:
   - Default: Prompts user if not provided
 
 - `--duration <timeframe>`: Campaign duration
-  - Example: `--duration "6 weeks"` or `--duration "Q2 2025"`
+  - Example: `--duration "6 weeks"` or `--duration "Q2 2026"`
   - Default: Prompts user if not provided
 
 - `--goal <objective>`: Primary campaign goal
@@ -303,7 +303,7 @@ campaigns/
 
 **Campaign Name:** Q2 FocusFlow 2.0 Launch
 **Tagline:** "Focus Forward with AI-Powered Productivity"
-**Duration:** 6 weeks (April 15 - May 31, 2025)
+**Duration:** 6 weeks (April 15 - May 31, 2026)
 **Budget:** $50,000
 **Campaign Owner:** Marketing Team
 **Status:** Planning
@@ -397,11 +397,11 @@ Generate 500 trial signups for FocusFlow 2.0
 ### Our Differentiation
 1. **Simplicity**: 10-minute setup vs 2+ hours
 2. **AI Prioritization**: Unique feature (tells you what to work on)
-3. **Modern**: Built for remote-first teams
+3. **Modern**: Built for distributed-first teams
 4. **Right-Sized**: Not overwhelming, just right for 10-50 person teams
 
 ### Positioning Statement
-"FocusFlow is the simple, AI-powered productivity platform for modern remote teams who want to get focused fast without the complexity of enterprise tools."
+"FocusFlow is the simple, AI-powered productivity platform for modern distributed teams who want to get focused fast without the complexity of enterprise tools."
 
 ### Competitive Advantages
 - ✅ 10-minute setup (fastest in market)
@@ -417,10 +417,10 @@ Generate 500 trial signups for FocusFlow 2.0
 ### Key Themes
 1. **Speed & Simplicity**: "10 minutes to productivity"
 2. **AI Innovation**: "AI that actually helps you prioritize"
-3. **Built for Remote**: "Finally, productivity for how we work now"
+3. **Built for Distributed Teams**: "Finally, productivity that works anywhere"
 
 ### Proof Points
-- 5,000+ remote teams using FocusFlow
+- 5,000+ distributed teams using FocusFlow
 - 4.8/5 star rating (2,500+ reviews)
 - Average user saves 2 hours per day
 - 10-minute average setup time

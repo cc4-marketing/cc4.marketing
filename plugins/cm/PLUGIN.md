@@ -67,8 +67,8 @@ The CM Plugin brings systematic, efficient marketing workflows to Claude Code. I
 
 ### Prerequisites
 
-- Claude Code installed (2025 native installer)
-- Basic understanding of Claude Code marketplace system
+- Claude Code installed
+- Basic understanding of Claude Code plugin system
 - Completed "Claude Code for Marketers" course (recommended)
 
 ### Install from Marketplace
@@ -298,8 +298,8 @@ MIT License - See LICENSE file
 ## Version
 
 **Current**: v0.1.0 (MVP)
-**Released**: 2025-01-14
-**Compatibility**: Claude Code 2025+
+**Released**: 2026-03-12
+**Compatibility**: Claude Code 1.5+
 
 ---
 

@@ -156,7 +156,7 @@ Generate and organize a content calendar:
 
 ```bash
 /cf:schedule \
-  --period "Q1 2025" \
+  --period "Q3 2026" \
   --frequency "3 blogs/week, 5 social/day, 2 emails/week" \
   --themes "Product updates, Thought leadership, Customer success"
 ```
@@ -256,7 +256,7 @@ Generate and organize a content calendar:
 ```
 
 **Options:**
-- `--period` - Time period (e.g., "Q1 2025", "January", "Next 30 days")
+- `--period` - Time period (e.g., "Q3 2026", "June", "Next 30 days")
 - `--frequency` - How often to publish (e.g., "3 blogs/week")
 - `--themes` - Content themes to cycle through
 - `--campaigns` - Link to specific campaigns
@@ -267,7 +267,7 @@ Generate and organize a content calendar:
 ```bash
 # Create monthly calendar
 /cf:schedule \
-  --period "March 2025" \
+  --period "June 2026" \
   --frequency "2 blogs/week, 5 social/day"
 
 # Campaign-specific calendar
@@ -375,7 +375,7 @@ done
 
 ```bash
 /cf:schedule \
-  --period "April 2025" \
+  --period "July 2026" \
   --frequency "3 blogs/week, 10 social/day, 2 emails/week" \
   --generate-content true
 ```

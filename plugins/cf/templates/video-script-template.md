@@ -405,5 +405,5 @@ Example:
 ---
 
 **Template Version:** 1.0
-**Last Updated:** 2025-01-14
+**Last Updated:** 2026-03-12
 **Platform:** All video platforms

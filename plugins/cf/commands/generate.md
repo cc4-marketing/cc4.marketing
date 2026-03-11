@@ -30,7 +30,7 @@ When the user invokes `/cf:generate`, you will:
 - `--quantity` - How many of each format (default: varies by format)
   - Example: "5 blogs, 10 emails, 30 social posts"
 - `--timeline` - Timeline content should cover (default: 2 weeks)
-  - Example: "4 weeks", "Q1 2025", "March"
+  - Example: "4 weeks", "Q3 2026", "June"
 - `--brand-guidelines` - Path to brand guidelines file (optional)
 - `--seo-keywords` - Target keywords for SEO optimization
 - `--output` - Output directory (default: content/[campaign-slug]/)
