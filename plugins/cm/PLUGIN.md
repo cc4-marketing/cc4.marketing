@@ -13,8 +13,10 @@ The CM Plugin brings systematic, efficient marketing workflows to Claude Code. I
 ### Commands (Workflow Automation)
 
 - **`/cm:plan`** - Research, analyze, and create comprehensive campaign briefs
+- **`/cm:write`** - Create marketing content with automatic brand voice and language standards
+- **`/cm:review`** - Review content against brand voice, language quality, and messaging (5-dimension scorecard)
+- **`/cm:rewrite`** - Rewrite content to match brand standards with documented changes
 - **`/cm:execute`** - Generate multi-channel content with parallel subagents (Coming Soon)
-- **`/cm:review`** - Launch 12+ specialized reviewers for comprehensive feedback (Coming Soon)
 
 ### Subagents (Specialized Reviewers)
 
@@ -158,6 +160,9 @@ This will:
 ### ✅ Currently Available (MVP)
 
 - `/cm:plan` command
+- `/cm:write` command — brand-aware content generation
+- `/cm:review` command — 5-dimension brand voice & language scorecard
+- `/cm:rewrite` command — systematic content correction with change tracking
 - 6 specialized subagent reviewers
 - Basic template library
 - Campaign brief automation
@@ -263,6 +268,9 @@ templates/
 ### v0.1 (MVP - Current)
 - ✅ Basic plugin structure
 - ✅ `/plan` command
+- ✅ `/write` command — brand-aware content generation
+- ✅ `/review` command — 5-dimension scorecard review
+- ✅ `/rewrite` command — systematic content correction
 - ✅ 6 subagent reviewers
 - ✅ Template library foundation
 
