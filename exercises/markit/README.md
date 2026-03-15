@@ -31,8 +31,21 @@
 
 ## Folder Structure
 
+### Starter State (right after clone)
+
+In a fresh clone, this practice project may initially contain only:
+
+```text
+exercises/markit/
+└── README.md
 ```
-markit/
+
+This is expected. The folders below are created progressively during lessons.
+
+### Target Structure (built across lessons)
+
+```text
+exercises/markit/
 ├── campaigns/          # Campaign briefs and plans
 │   ├── q1-launch/     # Q1 product launch campaign
 │   └── q2-growth/     # Q2 growth campaign
@@ -51,6 +64,11 @@ markit/
 ├── analytics/         # Performance data and reports
 └── templates/         # Reusable templates
 ```
+
+### Where folders get created
+
+- Module 0.1 (`/start-0-1`): scaffold base folders (`campaigns/`, `content/`, `brand/`, `research/`, `analytics/`, `templates/`)
+- Module 0.2+ (`/start-0-2` onward): add personas, content, campaigns, and analysis files progressively
 
 ## Getting Started
 
