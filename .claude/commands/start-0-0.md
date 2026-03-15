@@ -34,7 +34,7 @@ Throughout this course, you'll work on **Markit** - a realistic marketing agency
 
 Ask them:
 1. Do you have this course repository cloned?
-2. Can you see the `exercises/marketflow/` folder?
+2. Can you see the `exercises/markit/` folder?
 
 If not, guide them to clone it first.
 
