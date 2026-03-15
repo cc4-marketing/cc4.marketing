@@ -36,6 +36,14 @@ Then, type this exact command to begin:
 /start-0-0
 ```
 
+### Important path note (Module 0)
+
+- The practice project lives under: `exercises/markit/`
+- In a fresh clone, `exercises/markit/` may initially contain only `README.md`
+- You should **not** `cd markit` at repo root unless you created that folder yourself
+
+If you see older instructions mentioning a top-level `markit/` tree, treat those as outdated and follow the paths above.
+
 ---
 
 ## 📺 Video Guide

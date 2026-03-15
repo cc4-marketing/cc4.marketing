@@ -102,6 +102,8 @@ cc4.marketing/
 │   └── cf/                   # Content Factory plugin
 ```
 
+**Module 0 note:** in a fresh clone, `exercises/markit/` may start with only `README.md`; lessons scaffold the rest progressively.
+
 ## Brand Voice (for Planerio content)
 
 - **Tone:** Professional but approachable
