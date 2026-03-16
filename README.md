@@ -36,6 +36,12 @@ Then, type this exact command to begin:
 /start-0-0
 ```
 
+### Important: workspace paths
+
+The practice project lives under `exercises/markit/`. In a fresh clone, this folder may only contain `README.md` — that's expected. Lessons scaffold the remaining folders progressively.
+
+If you see older instructions referencing a top-level `markit/` directory, treat those as outdated and use `exercises/markit/` instead.
+
 ---
 
 ## 📺 Video Guide

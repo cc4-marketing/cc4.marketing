@@ -35,7 +35,7 @@ List files ending in -draft.md
 ### Step 2: Finding Files by Content
 
 ```
-Find all files that mention "Manager Mark"
+Find all files that mention "Manager Maria"
 ```
 
 ```
@@ -53,11 +53,11 @@ Show all files in exercises/markit/content/
 ```
 
 ```
-List everything in campaigns/ with subfolders
+List everything in exercises/markit/campaigns/ with subfolders
 ```
 
 ```
-What's in the brand/reviewers/ folder?
+What's in the exercises/markit/brand/reviewers/ folder?
 ```
 
 ### Step 4: Combined Searches

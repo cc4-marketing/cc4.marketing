@@ -1,0 +1,22 @@
+name: Content Consistency Check
+
+on:
+  pull_request:
+    paths:
+      - '.claude/commands/**'
+      - 'exercises/markit/**'
+      - 'CLAUDE.md'
+  push:
+    branches: [main]
+    paths:
+      - '.claude/commands/**'
+      - 'exercises/markit/**'
+      - 'CLAUDE.md'
+
+jobs:
+  content-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run content consistency checks
+        run: bash scripts/check-content-consistency.sh

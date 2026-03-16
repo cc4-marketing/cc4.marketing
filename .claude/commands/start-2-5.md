@@ -21,7 +21,7 @@ Understanding your competitive landscape is crucial for positioning and messagin
 ```
 Create detailed competitor profiles for Planerio's main competitors:
 
-Analyze: RescueTime, Freedom, Focus@Will
+Analyze: Clockwise, RescueTime, Reclaim.ai
 
 For each competitor:
 

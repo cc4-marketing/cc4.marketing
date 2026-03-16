@@ -152,7 +152,7 @@ Save as exercises/markit/analytics/ab-test-variations.md
 ```
 Create personalized email variations for each persona:
 
-For Manager Mark:
+For Manager Maria:
 - Technical language
 - Efficiency metrics focus
 - Developer team examples

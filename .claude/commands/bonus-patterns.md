@@ -31,7 +31,7 @@ After each campaign, add winning patterns here. Before each campaign, review thi
 ### High-Performers (2x+ average CTR)
 | Pattern | Example | Performance | Notes |
 |---------|---------|-------------|-------|
-| How [Persona] can [Benefit] | "How remote managers can save 10 hours/week" | 2.3x CTR | Works best for Manager Mark |
+| How [Persona] can [Benefit] | "How remote managers can save 10 hours/week" | 2.3x CTR | Works best for Manager Maria |
 | [Number] ways to [Outcome] | "7 ways to coordinate team focus time" | 2.1x CTR | Odd numbers outperform even |
 | The [Adjective] guide to [Topic] | "The complete guide to remote productivity" | 1.8x CTR | Best for pillar content |
 
@@ -111,7 +111,7 @@ After each campaign, add winning patterns here. Before each campaign, review thi
 
 ## Persona-Specific Patterns
 
-### Manager Mark
+### Manager Maria
 - Responds to: ROI, efficiency, team metrics
 - Avoid: Fluffy language, vague benefits
 - Best channels: LinkedIn, Email

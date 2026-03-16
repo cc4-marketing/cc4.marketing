@@ -81,14 +81,14 @@ This reviewer focuses on:
 ### Step 5: Create Persona Reviewer
 
 ```
-Create a "Manager Mark" Reviewer.
-Save as exercises/markit/brand/reviewers/persona-mark-reviewer.md
+Create a "Manager Maria" Reviewer.
+Save as exercises/markit/brand/reviewers/persona-maria-reviewer.md
 
-This reviewer asks: "Would this resonate with Manager Mark?"
-- Checks if pain points match his frustrations
-- Evaluates if language suits his level
-- Verifies examples are relevant to his world
-- Assesses if CTA fits his decision process
+This reviewer asks: "Would this resonate with Manager Maria?"
+- Checks if pain points match her frustrations
+- Evaluates if language suits her level
+- Verifies examples are relevant to her world
+- Assesses if CTA fits her decision process
 ```
 
 ### Step 6: Use the Review Board
@@ -102,7 +102,7 @@ Have these reviewers evaluate it:
 1. Brand Voice Guardian
 2. SEO Specialist  
 3. Conversion Expert
-4. Manager Mark Reviewer
+4. Manager Maria Reviewer
 
 Each should provide:
 - Score (1-10)

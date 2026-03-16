@@ -58,7 +58,7 @@ Agent 2: Create 10 LinkedIn posts (mix of formats)
 Agent 3: Write 5-email welcome sequence for trial signups
 Agent 4: Create Google Ads copy (10 headline + description combos)
 
-All content should follow our brand voice and target Manager Mark persona.
+All content should follow our brand voice and target Manager Maria persona.
 Save each in appropriate folders under exercises/markit/content/
 ```
 

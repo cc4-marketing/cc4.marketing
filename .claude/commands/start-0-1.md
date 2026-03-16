@@ -41,12 +41,29 @@ They should see:
 - `CLAUDE.md` file
 - `plugins/` folder (if bundled)
 
-### Step 3: Explore Markit Structure
+### Step 3: Check Starter State (Before Scaffolding)
 
-Show them the practice project:
+Show them what exists right after clone:
 
 ```
-List all folders in exercises/markit/
+List all files and folders in exercises/markit/
+```
+
+Important: in a fresh clone, students may only see `README.md` here. That's expected.
+
+### Step 4: Scaffold the Markit Project Structure
+
+Now create the working folders used in upcoming lessons:
+
+```
+Create this folder structure under exercises/markit/:
+- campaigns/
+- content/
+- brand/
+- research/
+- analytics/
+- templates/
+Then show the updated structure.
 ```
 
 Explain each folder:
@@ -57,12 +74,12 @@ Explain each folder:
 - `analytics/` - Performance data
 - `templates/` - Reusable templates
 
-### Step 4: Test File Creation
+### Step 5: Test File Creation
 
 Have them create their first file together:
 
 ```
-Create a file called exercises/markit/README.md with a brief description of Markit agency and our client Planerio.
+Create or update exercises/markit/README.md with a brief description of Markit agency and our client Planerio.
 ```
 
 **Planerio details to include:**
@@ -72,7 +89,7 @@ Create a file called exercises/markit/README.md with a brief description of Mark
 - Integrates with Slack, Zoom, Google Workspace
 - Target: Remote team managers at tech companies
 
-### Step 5: Verify It Worked
+### Step 6: Verify It Worked
 
 ```
 Read the file we just created
