@@ -86,3 +86,10 @@ See [CONTRIBUTING.md](CONTRIBUTING.md). Issues and pull requests are welcome.
 ## License
 
 [MIT](LICENSE)
+
+## Changelog
+
+Type `/whats-new` inside Claude Code to see the latest updates, or visit the [live changelog](https://cc4.marketing/changelog).
+
+- [RSS feed](https://cc4-changelog.mtri-vo.workers.dev/rss.xml)
+- [JSON feed](https://cc4-changelog.mtri-vo.workers.dev/feed.json)
