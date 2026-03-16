@@ -47,7 +47,7 @@ Now create the target personas:
 ```
 Create 3 customer persona documents in exercises/markit/brand/personas/
 
-1. manager-mark.md - Remote team manager, 35-45, manages 10-15 developers
+1. manager-maria.md - Distributed team manager, 35-45, manages 10-15 developers
 2. founder-fiona.md - Startup founder, 28-35, juggling many roles
 3. director-dana.md - Marketing director, 40-50, mid-size company
 
@@ -69,7 +69,7 @@ Show me all files in exercises/markit/brand/
 Then read one of the personas:
 
 ```
-Read the Manager Mark persona
+Read the Manager Maria persona
 ```
 
 ### Step 5: The Power of Context
@@ -85,7 +85,7 @@ Explain:
 Have them try:
 
 ```
-Based on the Manager Mark persona, write a one-paragraph pitch for Planerio that would resonate with him.
+Based on the Manager Maria persona, write a one-paragraph pitch for Planerio that would resonate with her.
 ```
 
 Show how Claude uses the persona context automatically.

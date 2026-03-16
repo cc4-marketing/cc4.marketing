@@ -50,7 +50,7 @@ Add a "Learnings" section to your CLAUDE.md:
 ### Q1 Launch (January 2026)
 - Subject lines with numbers performed 2x better
 - LinkedIn posts under 150 words got 3x engagement
-- Manager Mark responds best to ROI-focused messaging
+- Manager Maria responds best to ROI-focused messaging
 
 ### Q2 Growth (April 2026)
 - Video content outperformed static 4:1
@@ -137,7 +137,7 @@ exercises/markit/analytics/PATTERN-LIBRARY.md
 
 ### Headlines
 - "How [PERSONA] can [BENEFIT] in [TIMEFRAME]" → 2.3x CTR
-- Questions outperform statements for Manager Mark
+- Questions outperform statements for Manager Maria
 - Numbers in headlines increase opens 34%
 
 ### Email

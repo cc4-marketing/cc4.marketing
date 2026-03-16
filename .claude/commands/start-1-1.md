@@ -80,7 +80,7 @@ Show them refinement:
 
 ```
 The target audience section needs more depth. Expand it with:
-- Day in the life of Manager Mark
+- Day in the life of Manager Maria
 - Specific pain points we're addressing
 - Why now is the right time for Planerio
 ```
@@ -92,7 +92,7 @@ Explain: Iteration is key. First drafts are starting points.
 Demonstrate the power:
 
 ```
-Based on the campaign brief and our personas, write 3 LinkedIn post ideas that would resonate with Manager Mark.
+Based on the campaign brief and our personas, write 3 LinkedIn post ideas that would resonate with Manager Maria.
 ```
 
 Show how Claude pulls from multiple files automatically.

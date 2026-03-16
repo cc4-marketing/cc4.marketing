@@ -84,6 +84,8 @@ When teaching this course:
 
 ## File Structure
 
+> **Note:** At clone time, only `exercises/markit/README.md` exists. The subdirectories below are created during `/start-0-1` and populated progressively through lessons.
+
 ```
 cc4.marketing/
 ├── CLAUDE.md                 # This file - course context

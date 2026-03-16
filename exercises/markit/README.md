@@ -15,24 +15,37 @@
 - **Target:** Remote team managers at tech companies (50-500 employees)
 - **Pricing:** $12/user/month, 14-day free trial
 - **Key Feature:** Coordinate focus time across entire teams
-- **Positioning:** "RescueTime for teams"
+- **Positioning:** "Smart productivity coordination for distributed teams"
 - **Integrations:** Slack, Zoom, Google Workspace
 
 ### Target Personas
 
-1. **Manager Mark** - Remote team manager, 35-45, manages 10-15 developers
-2. **Founder Fiona** - Startup founder, 28-35, building team culture
+1. **Manager Maria** - Distributed team manager, 35-45, manages 10-15 developers
+2. **Founder Fiona** - Startup founder, 28-35, juggling many roles
 3. **Director Dana** - Marketing director, 40-50, mid-size company
 
 ### Competitors
+- Clockwise (calendar optimization)
 - RescueTime (individual time tracking)
-- Freedom (distraction blocking)
-- Focus@Will (focus music)
+- Reclaim.ai (smart scheduling)
 
 ## Folder Structure
 
+### Starter State (right after clone)
+
+In a fresh clone, this practice project contains only:
+
+```text
+exercises/markit/
+└── README.md
 ```
-markit/
+
+This is expected. The folders below are created during `/start-0-1` and populated progressively through lessons.
+
+### Target Structure (built across lessons)
+
+```text
+exercises/markit/
 ├── campaigns/          # Campaign briefs and plans
 │   ├── q1-launch/     # Q1 product launch campaign
 │   └── q2-growth/     # Q2 growth campaign

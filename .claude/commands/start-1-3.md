@@ -42,9 +42,9 @@ The LinkedIn post feels too salesy. Rewrite it to be more educational - focus on
 
 ```
 Create a competitive analysis comparing Planerio to:
+- Clockwise
 - RescueTime
-- Freedom
-- Focus@Will
+- Reclaim.ai
 
 For each competitor, analyze:
 - Target audience

@@ -59,7 +59,7 @@ Create a complete folder structure for Q2 campaign in exercises/markit/campaigns
 Teach search techniques:
 
 ```
-Find all files that mention "Manager Mark"
+Find all files that mention "Manager Maria"
 ```
 
 ```
@@ -84,10 +84,10 @@ Save as exercises/markit/brand/README.md
 Show the power of working with multiple files:
 
 ```
-Read the brand voice guide and Manager Mark persona.
+Read the brand voice guide and Manager Maria persona.
 Then write a short LinkedIn post for Planerio that:
 - Matches the brand voice
-- Speaks to Mark's pain points
+- Speaks to Maria's pain points
 - Includes a clear CTA
 
 Save to exercises/markit/content/social/linkedin-post-1.md
