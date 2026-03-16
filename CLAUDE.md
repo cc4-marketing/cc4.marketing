@@ -55,6 +55,8 @@ Type any of these commands to begin a lesson:
 
 ## Project Context
 
+> **Source of truth:** `data/course-context.json` contains the canonical definitions for Planerio, Markit, personas, and brand voice. All lesson files and content should align with this file.
+
 ### Markit Agency
 A marketing agency specializing in B2B SaaS clients. Students play the role of Marketing Strategist.
 

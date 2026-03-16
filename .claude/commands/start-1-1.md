@@ -23,7 +23,7 @@ Explain their role:
 > You're a Marketing Strategist at **Markit** agency. Your client is **Planerio**. Your mission:
 > 1. Launch the product to market
 > 2. Generate awareness and signups
-> 3. Create content that resonates with remote teams
+> 3. Create content that resonates with distributed teams
 > 4. Build a sustainable content marketing engine
 
 ### Step 2: Review Project Structure
