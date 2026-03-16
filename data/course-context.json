@@ -1,0 +1,60 @@
+{
+  "_description": "Single source of truth for course entities. All lesson files and CLAUDE.md should reference these canonical definitions to prevent content drift.",
+  "client": {
+    "name": "Planerio",
+    "category": "B2B SaaS",
+    "product": "Team productivity coordination tool",
+    "description": "Planerio is a team productivity coordination tool that helps distributed teams coordinate focus time using AI.",
+    "target": "Distributed team managers at tech companies (50-500 employees)",
+    "pricing": "$12/user/month, 14-day free trial",
+    "key_feature": "Coordinate focus time across entire teams using AI",
+    "positioning": "Smart productivity coordination for distributed teams",
+    "integrations": ["Slack", "Zoom", "Google Workspace"],
+    "competitors": [
+      {
+        "name": "Clockwise",
+        "category": "Calendar optimization"
+      },
+      {
+        "name": "RescueTime",
+        "category": "Individual time tracking"
+      },
+      {
+        "name": "Reclaim.ai",
+        "category": "Smart scheduling"
+      }
+    ]
+  },
+  "agency": {
+    "name": "Markit",
+    "description": "A marketing agency specializing in B2B SaaS clients.",
+    "student_role": "Marketing Strategist"
+  },
+  "personas": [
+    {
+      "name": "Manager Maria",
+      "title": "Distributed team manager",
+      "age_range": "35-45",
+      "detail": "Manages 10-15 developers across multiple time zones"
+    },
+    {
+      "name": "Founder Fiona",
+      "title": "Startup founder",
+      "age_range": "28-35",
+      "detail": "Juggling many roles at a growing startup"
+    },
+    {
+      "name": "Director Dana",
+      "title": "Marketing director",
+      "age_range": "40-50",
+      "detail": "Mid-size company, manages marketing team"
+    }
+  ],
+  "brand_voice": {
+    "tone": "Professional but approachable",
+    "style": "Knowledgeable without being condescending",
+    "perspective": "Use 'we' and 'you'",
+    "focus": "Benefits before features",
+    "avoid": ["Hyperbole", "Jargon", "Passive voice"]
+  }
+}

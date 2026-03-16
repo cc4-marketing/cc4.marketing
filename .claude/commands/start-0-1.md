@@ -82,12 +82,13 @@ Have them create their first file together:
 Create or update exercises/markit/README.md with a brief description of Markit agency and our client Planerio.
 ```
 
-**Planerio details to include:**
+**Planerio details to include (see `data/course-context.json` for canonical definitions):**
 - B2B team productivity coordination tool
-- Helps remote teams coordinate focus time
+- Helps distributed teams coordinate focus time using AI
 - $12/user/month, 14-day free trial
 - Integrates with Slack, Zoom, Google Workspace
-- Target: Remote team managers at tech companies
+- Target: Distributed team managers at tech companies (50-500 employees)
+- Positioning: "Smart productivity coordination for distributed teams"
 
 ### Step 6: Verify It Worked
 

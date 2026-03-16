@@ -8,11 +8,11 @@
 
 ## Your Client: Planerio
 
-**Planerio** is a team productivity coordination tool for remote teams.
+**Planerio** is a team productivity coordination tool that helps distributed teams coordinate focus time using AI.
 
 ### Product Details
 - **Category:** B2B SaaS
-- **Target:** Remote team managers at tech companies (50-500 employees)
+- **Target:** Distributed team managers at tech companies (50-500 employees)
 - **Pricing:** $12/user/month, 14-day free trial
 - **Key Feature:** Coordinate focus time across entire teams
 - **Positioning:** "Smart productivity coordination for distributed teams"
