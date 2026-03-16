@@ -1,91 +1,88 @@
 # Claude Code for Marketers
 
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-**Master advanced AI-powered marketing workflows with interactive, hands-on lessons taught entirely within Claude Code.**
+An interactive course that teaches AI-powered marketing workflows through hands-on practice inside [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
 
-## 🚀 Start Here
+No videos. No slides. You learn by doing real marketing work — creating campaign briefs, writing copy, building content strategies, and running competitive analysis — all guided by Claude inside the terminal.
 
-Welcome to the "Claude Code for Marketers" interactive course. This is **not** a video course or a PDF. It is a hands-on experience where you learn by doing real work inside the Claude Code environment.
+## Prerequisites
 
-### Quick Start Guide
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) installed (requires Claude Pro or Max subscription)
 
-**1. Prerequisites**
-You must have **Claude Code** installed. Download it at [claude.ai/code](https://claude.ai/code).
-
-**2. Download the Course**
-Open your terminal and run:
+## Getting Started
 
 ```bash
 git clone https://github.com/cc4-marketing/cc4.marketing.git
 cd cc4.marketing
-```
-
-*(Or download the ZIP file and unzip it)*
-
-**3. Start Learning**
-Open the folder in Claude Code:
-
-```bash
 claude
 ```
 
-Then, type this exact command to begin:
+Then type:
 
 ```
 /start-0-0
 ```
 
-### Important: workspace paths
+Claude will guide you from there.
 
-The practice project lives under `exercises/markit/`. In a fresh clone, this folder may only contain `README.md` — that's expected. Lessons scaffold the remaining folders progressively.
+## What You'll Learn
 
-If you see older instructions referencing a top-level `markit/` directory, treat those as outdated and use `exercises/markit/` instead.
+You play the role of a Marketing Strategist at **Markit**, a fictional agency working for a B2B SaaS client called **Planerio**. Across 16 lessons, you'll build real marketing assets while learning how to use Claude Code effectively.
 
----
+### Module 0 — Getting Started
+| Command | Lesson |
+|---------|--------|
+| `/start-0-0` | Course Introduction |
+| `/start-0-1` | Installation & Setup |
+| `/start-0-2` | Your First Marketing Task |
 
-## 📺 Video Guide
+### Module 1 — Core Concepts
+| Command | Lesson |
+|---------|--------|
+| `/start-1-1` | Welcome to Markit |
+| `/start-1-2` | Working with Marketing Files |
+| `/start-1-3` | First Marketing Tasks |
+| `/start-1-4` | Using Agents for Marketing |
+| `/start-1-5` | Custom Marketing Sub-Agents |
+| `/start-1-6` | Project Memory (CLAUDE.md) |
+| `/start-1-7` | Navigation & Search |
 
-*(Video walkthrough coming soon!)*
+### Module 2 — Marketing Workflows
+| Command | Lesson |
+|---------|--------|
+| `/start-2-1` | Write a Campaign Brief |
+| `/start-2-2` | Develop Content Strategy |
+| `/start-2-3` | Generate Marketing Copy |
+| `/start-2-4` | Analyze Campaign Data |
+| `/start-2-5` | Competitive Analysis |
+| `/start-2-6` | SEO Optimization |
 
-## 📖 How to use this course
+## Plugins
 
-This course uses an interactive, AI-native learning approach. Instead of passive video consumption, you work directly with AI to build real marketing assets.
+The course includes two Claude Code plugins with additional marketing commands:
 
-1.  **Interactive Lessons**: You type slash commands (like `/start-1-1`), and Claude Code will give you instructions, explain concepts, and check your work.
-2.  **Real Files**: You will create actual marketing assets (briefs, emails, strategy docs) in the `exercises/` folder.
-3.  **Practice Project**: You act as a Strategist at "Markit" (an agency) working for "Planerio" (a B2B client).
+- **Compounding Marketing** (`/cm:plan`) — Campaign planning with persona-based reviewers and brand voice checks
+- **Content Factory** (`/cf:generate`, `/cf:repurpose`, `/cf:schedule`) — Content generation, repurposing, and scheduling from templates
 
-## Course Content
+## Project Structure
 
-### Module 0: Getting Started
-- `/start-0-0` - Course Introduction
-- `/start-0-1` - Installation & Setup
-- `/start-0-2` - Your First Marketing Task
+```
+cc4.marketing/
+├── .claude/commands/     # Lesson slash commands
+├── exercises/markit/     # Practice project (your workspace)
+├── plugins/
+│   ├── cm/               # Compounding Marketing plugin
+│   └── cf/               # Content Factory plugin
+└── data/                 # Canonical course definitions
+```
 
-### Module 1: Core Concepts
-- `/start-1-1` - Welcome to Markit
-- `/start-1-2` - Working with Marketing Files
-- `/start-1-3` - First Marketing Tasks
-- `/start-1-4` - Using Agents for Marketing
-- `/start-1-5` - Custom Marketing Sub-Agents
-- `/start-1-6` - Project Memory (CLAUDE.md)
-- `/start-1-7` - Navigation & Search
-
-### Module 2: Marketing Workflows
-- `/start-2-1` - Write a Campaign Brief
-- `/start-2-2` - Develop Content Strategy
-- `/start-2-3` - Generate Marketing Copy
-- `/start-2-4` - Analyze Campaign Data
-- `/start-2-5` - Competitive Analysis
-- `/start-2-6` - SEO Optimization
+> After cloning, `exercises/markit/` contains only a README. Lesson folders are created progressively as you work through the course.
 
 ## Contributing
 
-Found a bug or have a suggestion?
-- Open an [issue](https://github.com/cc4-marketing/cc4.marketing/issues)
-- Submit a [pull request](https://github.com/cc4-marketing/cc4.marketing/pulls)
+See [CONTRIBUTING.md](CONTRIBUTING.md). Issues and pull requests are welcome.
 
 ## License
 
-MIT License - feel free to use, modify, and share.
+[MIT](LICENSE)
