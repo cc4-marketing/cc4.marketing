@@ -46,6 +46,7 @@ Type any of these commands to begin a lesson:
 - `/help` - Show all available commands
 - `/progress` - Check course progress
 - `/reset` - Reset exercise files to starting state
+- `/whats-new` - See latest course & site updates (changelog)
 
 ### Secret Bonus Commands (Easter Eggs)
 - `/bonus-secret` - The 10x Marketer Framework (unlocked after completing course)
