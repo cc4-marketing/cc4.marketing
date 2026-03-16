@@ -56,6 +56,7 @@ Display all available commands and course navigation help.
 - `/help` - Show this help (you're here!)
 - `/progress` - Check your course progress
 - `/reset` - Reset exercise files to starting state
+- `/whats-new` - See latest course & site updates
 
 ## Quick Tips
 
@@ -64,6 +65,8 @@ Display all available commands and course navigation help.
 **Resuming?** Type `/progress` to see where you left off
 
 **Need reference docs?** Visit https://cc4.marketing
+
+**Want updates?** Type `/whats-new` to see the latest changes
 
 **Have questions?** Just ask! Claude is here to help.
 
