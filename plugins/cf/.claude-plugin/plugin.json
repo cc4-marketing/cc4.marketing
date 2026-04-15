@@ -1,0 +1,6 @@
+{
+  "name": "cf",
+  "version": "0.1.0",
+  "description": "Content Factory — batch-generate, repurpose, and schedule content across blogs, email, social, and video",
+  "license": "MIT"
+}
