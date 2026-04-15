@@ -1,0 +1,23 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "cc4-marketing",
+  "description": "Claude Code for Marketers — CM (Compounding Marketing) and CF (Content Factory) plugins",
+  "owner": {
+    "name": "cc4-marketing",
+    "email": "support@cc4.marketing"
+  },
+  "plugins": [
+    {
+      "name": "cm",
+      "description": "Compounding Marketing — plan, execute, and review campaigns with persona reviewers and brand-voice checks",
+      "category": "productivity",
+      "source": "./plugins/cm"
+    },
+    {
+      "name": "cf",
+      "description": "Content Factory — batch-generate, repurpose, and schedule content across blogs, email, social, and video",
+      "category": "productivity",
+      "source": "./plugins/cf"
+    }
+  ]
+}
