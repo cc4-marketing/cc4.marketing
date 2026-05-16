@@ -24,3 +24,6 @@ pnpm-debug.log*
 .idea/
 .claude/settings.local.json
 .worktrees
+
+# local drafts
+drafts/
