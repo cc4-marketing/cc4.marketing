@@ -57,6 +57,7 @@ You play the role of a Marketing Strategist at **Markit**, a fictional agency wo
 | `/start-2-4` | Analyze Campaign Data |
 | `/start-2-5` | Competitive Analysis |
 | `/start-2-6` | SEO Optimization |
+| `/start-2-7` | Service Package from a Real Engagement |
 
 ## Plugins
 

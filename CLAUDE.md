@@ -33,6 +33,7 @@ Type any of these commands to begin a lesson:
 - `/start-2-4` - Analyze Campaign Data
 - `/start-2-5` - Competitive Analysis
 - `/start-2-6` - SEO Optimization
+- `/start-2-7` - Service Package from a Real Engagement
 
 ### Plugin Commands
 - `/cm:plan` - Create comprehensive campaign plans

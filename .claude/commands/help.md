@@ -39,6 +39,7 @@ Display all available commands and course navigation help.
 | `/start-2-4` | Analyze Campaign Data | 35 min |
 | `/start-2-5` | Competitive Analysis | 30 min |
 | `/start-2-6` | SEO Optimization | 40 min |
+| `/start-2-7` | Service Package from a Real Engagement | 60 min |
 
 ## Plugin Commands
 

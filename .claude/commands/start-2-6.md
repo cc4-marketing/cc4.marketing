@@ -2,7 +2,7 @@
 
 ## Instructions for Claude
 
-Final lesson - teach comprehensive SEO strategy and execution.
+Teach comprehensive SEO strategy and execution.
 
 ### Lesson Overview
 
@@ -212,37 +212,19 @@ CONVERSIONS:
 Save as exercises/markit/analytics/seo-measurement-framework.md
 ```
 
-### Course Complete!
+### Lesson Complete!
 
 ---
 
-🎉 **CONGRATULATIONS!**
-
-**You've completed Claude Code for Marketers!**
-
-You now know how to:
-- ✅ Use Claude Code for file operations
-- ✅ Run parallel agents for complex workflows
-- ✅ Create custom sub-agent reviewers
-- ✅ Maintain project memory with CLAUDE.md
-- ✅ Write comprehensive campaign briefs
-- ✅ Build content strategies
-- ✅ Generate marketing copy at scale
-- ✅ Analyze data and create reports
-- ✅ Research competitors
-- ✅ Execute SEO strategies
-
-**You're now an AI-powered marketer!**
+**Excellent work!** You've mastered SEO strategy — and completed the campaign cycle for Planerio.
 
 ---
 
 ### What's Next
 
 Tell them:
-- Use the `/cm:` and `/cf:` plugin commands for ongoing work
-- Reference the website (cc4.marketing) for documentation
-- Keep building on what they've learned
-- Each campaign makes the next one easier (Compounding Effect)
+- **Final lesson:** `/start-2-7` - Service Package from a Real Engagement — turn the whole Planerio engagement into a sellable service
+- Everything built in Module 2 becomes the raw material for the next lesson
 
 ## Key Teaching Points
 - SEO drives sustainable growth
