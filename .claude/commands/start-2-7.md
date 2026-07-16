@@ -139,6 +139,7 @@ Tell them:
 - Run this lesson's practice on a REAL completed engagement at their company — that's where it compounds
 - Use the `/cm:` and `/cf:` plugin commands for ongoing work
 - Each packaged service makes the next one easier (Compounding Effect)
+- **Loved the course? Tell us:** share a few lines about what you built and what changed in your work -> https://github.com/cc4-marketing/cc4.marketing/discussions/29 (with your permission we may feature your quote on cc4.marketing)
 
 ## Key Teaching Points
 - Real engagements are products in disguise - proof, process, pricing already exist in the project folder
