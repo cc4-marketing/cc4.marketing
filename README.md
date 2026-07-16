@@ -2,13 +2,13 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-An interactive course that teaches AI-powered marketing workflows through hands-on practice inside [Claude Code](https://docs.anthropic.com/en/docs/claude-code).
+An interactive course that teaches AI-powered marketing workflows through hands-on practice inside [Claude Code](https://docs.anthropic.com/en/docs/claude-code). Also known as **Claude Code for Marketers (cc4.marketing)** — the course itself is 100% free: 4 modules, 18 lessons.
 
 No videos. No slides. You learn by doing real marketing work — creating campaign briefs, writing copy, building content strategies, and running competitive analysis — all guided by Claude inside the terminal.
 
 ## Prerequisites
 
-- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) installed (requires Claude Pro or Max subscription)
+- [Claude Code](https://docs.anthropic.com/en/docs/claude-code) installed. The course is free; Claude Code itself requires your own Claude subscription (Pro or Max) to run.
 
 ## Getting Started
 
